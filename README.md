@@ -30,7 +30,7 @@ You'll need to have the following installed on your machine:
 $ git clone https://github.com/JFParrott/travel-photos-fe
 ```
 
-2. E
+2. Navigate into the directory and install the necessary dependencies.
 
 ```
 $ cd travel-photos-fe
@@ -51,8 +51,6 @@ $ npm start
 
 - Create React App
 - React
-- React Image File Resizer
-- Material-UI
-- Pure React Carousel
+- React Lazy Load Image Component
 - Styled Components
-- Firebase Authentication
+- Reach Router
