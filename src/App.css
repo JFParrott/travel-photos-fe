@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+html {
+  font-family: 'Assistant', sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font: inherit;
+  letter-spacing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:focus {
+  outline: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  color: #996600;
+}
+
+#page {
+  display: grid;
+  grid-template-areas: 'sidebar content';
+  grid-template-columns: 1fr 4fr;
+}
+
+#sidebar {
+  grid-area: 'sidebar';
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 'content';
+}
+
+.header {
+  margin-top: 8vh;
+  margin-bottom: 40px;
+}
+
+.sidebar-button {
+  margin: 10px 20px 0 0;
+  text-align: left;
+  background: none;
+  border: none;
+}
+
+.initials {
+  font-size: 8px;
+  text-decoration: none;
+  letter-spacing: 6px;
+}
+
+.initials:visited {
+  color: black;
+}
+
+.initials:hover {
+  color: #996600;
+}
+
+.destination {
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.destination-item:hover {
+  color: #996600;
+}
+
+.destination-list {
+  list-style-type: none;
+}
+
+.menu {
   display: flex;
   flex-direction: column;
+}
+
+.image {
+  max-width: 95%;
+  max-height: 90vh;
+  margin-left: 10px;
+  margin-top: 8vh;
+}
+
+.about-image {
+  max-height: 90vh;
+  margin-left: 100px;
+  margin-top: 8vh;
+}
+
+#about-p {
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+
+#about-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* #about-button {
+  position: absolute;
+  bottom: 30vh;
+} */
+
+.p-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  height: 60px;
+  width: 40px;
+  font-size: 40px;
+  z-index: 99;
+}
+
+.p-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.p-button:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.left-button {
+  position: absolute;
+  left: 21%;
+  top: 50%;
+}
+
+.right-button {
+  position: absolute;
+  right: 3.9%;
+  top: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .left-button {
+    position: absolute;
+    left: 10%;
+    top: 55%;
   }
-  to {
-    transform: rotate(360deg);
+  .right-button {
+    position: absolute;
+    right: 10%;
+    top: 55%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-button {
+    position: absolute;
+    left: 10%;
+    top: 60%;
+  }
+  .right-button {
+    position: absolute;
+    right: 10%;
+    top: 60%;
   }
 }
