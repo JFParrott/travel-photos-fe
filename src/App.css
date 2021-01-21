@@ -82,6 +82,9 @@ button:hover {
   max-width: 95%;
   max-height: 90vh;
   margin-left: 10px;
+}
+
+.image-container {
   margin-top: 8vh;
 }
 

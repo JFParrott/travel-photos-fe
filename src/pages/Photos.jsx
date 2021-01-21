@@ -52,7 +52,7 @@ export default function Photos(props) {
           alt={photos[currentPhoto].label}
           effect="blur"
           key={photos[currentPhoto].url_tag}
-          placeholderSrc={photos[currentPhoto].resized}
+          placeholderSrc={`https://jp-travel-photos.s3.eu-west-2.amazonaws.com/${photos[currentPhoto].location}/${photos[currentPhoto].resized}`}
           src={`https://jp-travel-photos.s3.eu-west-2.amazonaws.com/${photos[currentPhoto].location}/${photos[currentPhoto].url_tag}`}
         ></LazyLoadImage>
       )}
