@@ -9,6 +9,7 @@ const Home = () => {
         }
         alt={"Countries I've visited"}
         className="image"
+        id="home-image"
       ></img>
     </div>
   );
