@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-container">
       <img
         src={
           'https://jp-travel-photos.s3.eu-west-2.amazonaws.com/visited-countries.jpg'

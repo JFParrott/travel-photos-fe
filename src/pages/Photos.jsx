@@ -21,12 +21,10 @@ export default function Photos(props) {
       });
   }, [place]);
 
-  //change s3 permissions to only allow hosted front end to access photos
-  //https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-photos-view.html
   const atStart = currentPhoto === 0;
   const atEnd = currentPhoto === photos.length - 1;
   return (
-    <div>
+    <div className="image-container">
       <button
         id="myBtn"
         className="p-button left-button"

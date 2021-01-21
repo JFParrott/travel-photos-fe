@@ -75,9 +75,7 @@ export default function Sidebar() {
       ) : null}
 
       <Link to={'/about'}>
-        <button className="sidebar-button" id="about-button">
-          About
-        </button>
+        <button className="sidebar-button">About</button>
       </Link>
     </ul>
   );
