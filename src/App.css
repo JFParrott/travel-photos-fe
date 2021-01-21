@@ -138,7 +138,7 @@ button:hover {
 @media screen and (max-width: 1300px) {
   .left-button {
     position: fixed;
-    left: 22%;
+    left: 21%;
     top: 40%;
   }
   .right-button {
