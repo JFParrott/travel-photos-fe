@@ -9,6 +9,8 @@ Built as a personal project in order to demonstrate my passions: software develo
 A hosted version can be found here:
 https://jfp-travels.netlify.app/
 
+Please be patient on first loading the hosted version while the backend wakes up!
+
 The repository for the backend can be found here:
 https://github.com/JFParrott/travel-photos
 
