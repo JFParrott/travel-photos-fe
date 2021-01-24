@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Photos from './pages/Photos';
 import About from './pages/About';
 import Connect from './pages/Connect';
+import Redirector from './components/Redirector';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Photos path="/destinations/:place" />
         <About path="/about" />
         <Connect path="/connect" />
+        <Redirector default />
       </Router>
     </div>
   );
